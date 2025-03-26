@@ -1,2 +1,0 @@
-execute at @a run playsound minecraft:entity.wither.spawn ambient @a[distance=0] ~ ~ ~ 100
-tellraw @a {"text":"\u0412\u044b \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0442\u0435, \u043a\u0430\u043a \u0432\u0440\u0435\u043c\u044f \u0432\u043e\u043a\u0440\u0443\u0433 \u0432\u0430\u0441 \u0437\u0430\u043c\u0438\u0440\u0430\u0435\u0442...","color":"dark_aqua"}
