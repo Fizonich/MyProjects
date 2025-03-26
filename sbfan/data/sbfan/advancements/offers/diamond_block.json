@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Большое богатство"
+        },
+        "description": {
+            "text": "Преподнесите что-то большое и ценное",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:diamond_block"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "Impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sbfan:offers/diamond"
+}

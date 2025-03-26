@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Большое состояние"
+        },
+        "description": {
+            "text": "Преподнесите что-то большое и дорогое",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:netherite_block"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "Impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sbfan:offers/netherite"
+}

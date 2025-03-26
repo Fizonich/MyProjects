@@ -1,0 +1,9 @@
+execute at @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000}]},tag=Haste] run effect clear @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000}]}] minecraft:strength
+
+execute at @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000},{id:"minecraft:haste"}]},tag=!Haste] run playsound minecraft:entity.player.levelup ambient @a ~ ~ ~ 1
+execute at @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000},{id:"minecraft:haste"}]},tag=!Haste] run particle minecraft:happy_villager ~ ~1 ~ 0.3 0.5 0.3 1 100
+execute at @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000},{id:"minecraft:haste"}]},tag=!Haste] run advancement grant @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000},{id:"minecraft:haste"}]},tag=!Haste] only sbfan:infection/haste
+execute at @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000},{id:"minecraft:haste"}]},tag=!Haste] run tellraw @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000},{id:"minecraft:haste"}]}] {"text":"\u0412\u044b \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0442\u0435, \u043a\u0430\u043a \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0432\u0430\u0448\u0435\u0433\u043e \u043a\u043e\u043f\u0430\u043d\u0438\u044f \u0437\u0430\u043c\u0435\u0442\u043d\u043e \u0432\u044b\u0440\u043e\u0441\u043b\u0430...","color":"dark_purple"}
+execute at @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000},{id:"minecraft:haste"}]},tag=!Haste] run tag @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000},{id:"minecraft:haste"}]}] add Haste
+
+execute at @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000}]}] run effect clear @a[nbt={active_effects:[{id:"minecraft:strength",duration:36000}]}] minecraft:strength

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Клин клином вышибают"
+        },
+        "description": {
+            "text": "Найдите способ избавиться от утомления",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:wet_sponge"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "Impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sbfan:root"
+}

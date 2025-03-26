@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Око за око"
+        },
+        "description": {
+            "text": "Найдите способ избежать слепоты во время болезни",
+            "color": "dark_purple"
+        },
+        "icon": {
+            "item": "minecraft:ender_eye"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "Impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sbfan:root"
+}

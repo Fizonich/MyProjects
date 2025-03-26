@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "SB Fan"
+        },
+        "description": {
+            "text": "Добро пожаловать в мир священной сакуры!",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:cherry_leaves"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/cherry_log.png"
+    },
+    "criteria": {
+        "Tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

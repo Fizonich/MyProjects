@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Отчаянный доктор"
+        },
+        "description": {
+            "text": "Доведите вирус до финальной стадии. Вы этого добивались?",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:sculk_shrieker"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "Impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sbfan:infection/doctor"
+}
