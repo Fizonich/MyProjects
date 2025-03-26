@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Каменное лицо"
+        },
+        "description": {
+            "text": "Вам настолько не хочется тратить свои ресурсы?",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:cobblestone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "Impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sbfan:offers/coal"
+}

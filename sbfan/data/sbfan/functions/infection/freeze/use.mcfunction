@@ -1,0 +1,10 @@
+effect clear @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=Mutate] minecraft:fire_resistance
+
+execute at @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] run playsound minecraft:entity.warden.heartbeat ambient @a ~ ~ ~ 1
+execute at @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] run particle minecraft:sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.1 100
+execute at @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] run advancement grant @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] only sbfan:infection/mutation
+execute at @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] run tellraw @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] {"text":"\u0412\u044b \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0442\u0435, \u043a\u0430\u043a \u043f\u0440\u043e\u0446\u0435\u0441\u0441 \u043c\u0443\u0442\u0430\u0446\u0438\u0438 \u0432\u0438\u0440\u0443\u0441\u0430 \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b\u0441\u044f...","color":"dark_purple"}
+execute at @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] run scoreboard players reset @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] InfectMutation
+execute at @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] run tag @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]},tag=!Mutate,scores={InfectStage=1}] add Mutate
+
+effect clear @a[nbt={active_effects:[{id:"minecraft:fire_resistance",duration:36000}]}] minecraft:fire_resistance

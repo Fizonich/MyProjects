@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Мгновенная заморозка"
+        },
+        "description": {
+            "text": "Остановите мутацию вируса, пока не стало слишком поздно",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:sculk_sensor"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "Impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sbfan:infection/karantin"
+}

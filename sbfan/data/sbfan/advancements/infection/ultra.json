@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Сумасшедший учёный"
+        },
+        "description": {
+            "text": "Преодолейте иммунитет и снова заразитесь скалковым вирусом",
+            "color": "dark_purple"
+        },
+        "icon": {
+            "item": "minecraft:calibrated_sculk_sensor"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "Impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sbfan:infection/doctor"
+}

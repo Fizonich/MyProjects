@@ -1,0 +1,23 @@
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run playsound minecraft:entity.warden.sonic_boom hostile @a ~ ~ ~ 1
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run particle minecraft:sculk_soul ~ ~1 ~ 0.3 0.5 0.3 1 500
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run tellraw @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] {"text":"\u0412\u044b \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0442\u0435, \u043a\u0430\u043a \u0437\u0435\u043b\u044c\u0435 \u043e\u0442\u0432\u0435\u0440\u0433\u0430\u0435\u0442 \u0432\u0430\u0448 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u043c, \u0443\u0431\u0438\u0432\u0430\u044f \u0435\u0433\u043e...","color":"dark_purple"}
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run team add Tempp
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run team modify Tempp deathMessageVisibility never
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run team join Tempp @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist]
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run kill @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist]
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run tellraw @a ["",{"selector":"@a[nbt={active_effects:[{id:\"minecraft:resistance\",duration:72000}]},tag=!Resist]"},{"text":" \u043f\u043e\u0433\u0438\u0431 \u043e\u0442 \u0441\u043a\u0430\u043b\u043a\u043e\u0432\u043e\u0439 \u043f\u0435\u0440\u0435\u0434\u043e\u0437\u0438\u0440\u043e\u0432\u043a\u0438"}]
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run team remove Tempp
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=!Resist] run effect clear @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]}] minecraft:resistance
+
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run particle minecraft:sculk_soul ~ ~1 ~ 0.3 0.5 0.3 1 500
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run playsound minecraft:entity.warden.sonic_boom hostile @a ~ ~ ~ 1
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run playsound minecraft:entity.warden.roar hostile @a ~ ~ ~ 1
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run tellraw @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] {"text":"\u0412\u044b \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0442\u0435, \u043a\u0430\u043a \u0432\u0438\u0440\u0443\u0441 \u0441\u0442\u0440\u0435\u043c\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0441\u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u044f\u0435\u0442\u0441\u044f \u043f\u043e \u0432\u0430\u0448\u0435\u043c\u0443 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u043c\u0443...","color":"dark_purple"}
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run effect give @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] minecraft:nausea 10 255 true
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run effect give @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] minecraft:darkness 5 255 true
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run advancement grant @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] only sbfan:infection/ultra
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run scoreboard players set @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] InfectStage 3
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run tag @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] add Infect
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] run tag @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]},tag=Resist] remove Resist
+
+execute at @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]}] run effect clear @a[nbt={active_effects:[{id:"minecraft:resistance",duration:72000}]}] minecraft:resistance
